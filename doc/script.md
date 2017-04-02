@@ -35,11 +35,20 @@ Examples:
 
 ### Relative filepaths
 It's (almost) not possible to load scripts using a relative filepath.
-The reason is that a script is loaded as a **string** and then evaluated as a function.
+
+`script <script_dir>/example.js`
+
+```javascript
+//example.js
+load("./another-script.js");
+// Fails to load the script
+```
+
+The reason is that a script is loaded as a **string** and then evaluated as a function. The directory where SQLcl tries to find the file is the directory where you started SQLcl.
 
 Example of script evaluation:
 ```javascript
-eval('print("hello world");');
+eval('load("./another-script.js");');
 ```
 
 The context of these variables in a script are empty:
@@ -51,10 +60,15 @@ A workaround could be:
 
 Change the current working directory to the location of the script
 
-`cd <script_dir>`
+```
+cd <script_dir>
+script example.js
+```
 
 Now you can load the current directory into a variable in your script
 ```javascript
+//example.js
+
 var FileUtils = Java.type("oracle.dbtools.common.utils.FileUtils");
 var cwd = FileUtils.getCWD(ctx);
 ```
