@@ -1,8 +1,14 @@
 # Testing Nashorn scripts with Netbeans IDE 8.2
 
+Netbeans IDE allows you to run and debug your Nashorn scripts.
+
+## Requirements
+To run the latest version of Nashorn, we need to install JDK 1.8: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+
 ## Install
 
-You can download Netbeans from https://netbeans.org/downloads/
+You can download Netbeans IDE 8.2 from https://netbeans.org/downloads/
 
 The Java SE edition is sufficient.
 
