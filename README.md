@@ -13,9 +13,9 @@ You can use scripts in two ways:
 1. Via the ```script``` command
 2. Inside an ```alias```
 
-This project shows you 
+This project shows you:
 - a way to test your SQLcl scripts in Netbeans IDE
-- Lots of examples
+- Lots of examples for `script` and `alias` commands
 
 # Configure SQLcl
 
