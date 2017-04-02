@@ -14,7 +14,7 @@ This project shows you
 # Testing scripts with Netbeans IDE
 
 ## Basic Nashorn scripts
-In this section is you'll learn the basics of writing Nashorn scripts.
+In this section is you'll learn the basics of writing Nashorn scripts and how to install Netbeans EDI.
 
 [Basic Nashorn scripts](doc/netbeans.md)
 
