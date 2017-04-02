@@ -6,6 +6,11 @@
 
 var connection = loadWithNewGlobal("https://raw.githubusercontent.com/mennooo/sqlcl/master/lib/connection.js");
 var output = loadWithNewGlobal("https://raw.githubusercontent.com/mennooo/sqlcl/master/lib/output.js");
+var dbConn = {};
+
+for (arg in arguments) {
+	print(arg);
+}
 
 var myConnection = connection.init({
     sid: 'ORCL',
