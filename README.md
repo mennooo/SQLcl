@@ -55,7 +55,7 @@ Aliases are persistent (as opposed to scripts).
 
 Purpose: perfect for creating shortcuts for SQL statements.
 
-In this section is you'll learn how to create, import and execute an alias.
+In this section is you'll learn how to create, import/export and execute an alias.
 
 - [The alias command](doc/alias.md)
 
