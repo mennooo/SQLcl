@@ -19,6 +19,9 @@ This project shows you:
 - a way to test your SQLcl scripts in Netbeans IDE
 - Lots of examples for `script` and `alias` commands
 
+Download SQLcl at:
+- [http://www.oracle.com/technetwork/developer-tools/sqlcl/overview/index.html](http://www.oracle.com/technetwork/developer-tools/sqlcl/overview/index.html)
+
 # Configure SQLcl
 
 ## Add to PATH
