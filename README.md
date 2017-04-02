@@ -22,12 +22,16 @@ This project shows you
 ## login.sql
 
 # Using the Script Command
+You can load scripts and add them as custom commands.
+In this section is you'll learn how to load and execute a script.
 
-## Sample scripts
+[Basic Nashorn scripts](doc/script.md)
 
 # Using the Alias Command
+Aliases are persistent (as opposed to scripts).
+In this section is you'll learn how to create, import and execute an alias.
 
-## Sample scripts
+[Basic Nashorn scripts](doc/alias.md)
 
 # Testing Nashorn scripts with Netbeans IDE
 
