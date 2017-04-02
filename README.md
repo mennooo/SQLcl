@@ -21,7 +21,7 @@ In this section is you'll learn the basics of writing Nashorn scripts and how to
 ## Advanced Nashorn scripts to interact with the SQLcl libraries
 In this section I've explored the way to test your SQLcl scripts without use of the commandline tool.
 
-[Advanced Nashorn scripts for SQLcl](doc/netbeans.md)
+[Advanced Nashorn scripts for SQLcl](doc/netbeans-sqlcl.md)
 
 # Useful resources
 These are resources I found useful for preparing this project.
