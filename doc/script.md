@@ -7,7 +7,7 @@ Although not very useful, it's the easiest way to execute a script.
 
 1. Start SQLcl
 
-```sql.exe /nolog```
+`sql.exe /nolog`
 
 2. Execute script
 
@@ -28,8 +28,17 @@ SQL>
 ## External scripts
 Command: `script <script name>`
 
-## Relative filepaths
+Examples:
+[https://github.com/oracle/oracle-db-tools/tree/master/sqlcl/examples](https://github.com/oracle/oracle-db-tools/tree/master/sqlcl/examples)
 
+## Tips
+
+### Relative filepaths
+It's (almost) not possible to load scripts using a relative filepath.
+
+### Changing the OutputStream
+By default the output of a statement is written to the console/terminal. Sometimes you want to write the output to a file for instance.
+If spooling a file is not sufficient, you have the option to change the OutputStream.
 
 ## Creating a custom command
 SQLcl allows you to add custom commands. For instance:
