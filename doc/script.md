@@ -37,7 +37,7 @@ Examples:
 It's (almost) not possible to load scripts using a relative filepath.
 The reason is that a script is loaded as a **string** and then evaluated as a function.
 
-Example:
+Example of script evaluation:
 ```javascript
 eval('print("hello world");');
 ```
