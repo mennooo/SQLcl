@@ -74,6 +74,13 @@ In this section I've explored the way to test your SQLcl scripts without use of 
 
 - [Advanced Nashorn scripts for SQLcl](doc/netbeans-sqlcl.md)
 
+# Exploring the Java Libraries
+SQLcl offers tons of methods in its Java Libraries. In advanced scripts, you might want to use some of them.
+
+In this section I've explored some relevant methods of the Java types.
+
+- [Exploring the Java Libraries](doc/java-libraries.md)
+
 # Useful resources
 These are resources I found useful for preparing this project.
 
