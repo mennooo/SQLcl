@@ -1,6 +1,7 @@
 # Testing SQLcl scripts with Netbeans IDE 8.2
 
 You can test SQLcl scripts with Netbeans without using the commandline tool.
+This approach is much more efficient than reloading your script in SQLcl after you've made a change.
 
 ## 
 
