@@ -1,5 +1,29 @@
 # The script command
 
+## Inline scripts
+Although not very useful, it's the easiest way to execute a script.
+
+1. Start SQLcl
+
+```sql.exe /nolog```
+
+2. Execute script
+
+Type `script` and hit ENTER.
+```
+script 
+ctx.write('My first script\n');
+/
+```
+Output:
+```
+SQL> script
+  2  ctx.write('My first script\n');
+  3  /
+My first script
+SQL>
+```
+
 ## Relative filepaths
 
 
