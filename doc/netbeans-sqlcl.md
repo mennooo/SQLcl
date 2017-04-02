@@ -45,7 +45,7 @@ loadWithNewGlobal(
 );
 ```
 
-You should get a similar result:
+You should get a similar result when you run the script:
 
 ```
 apr 02, 2017 11:25:45 PM oracle.dbtools.jdbc.util.LogUtil log
