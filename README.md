@@ -1,6 +1,8 @@
 # Content
 - [SQLcl - Scripting](#sqlcl-scripting)
 - [Configure SQLcl](#configure-sqlcl)
+- [Using the Script Command](#using-the-script-command)
+- [Using the Alias Command](#using-the-alias-command)
 - [Testing Nashorn scripts with Netbeans IDE](#testing-nashorn-scripts-with-netbeans-ide)
 - [Useful resources](#useful-resources)
 
