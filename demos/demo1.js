@@ -9,8 +9,8 @@ var output = loadWithNewGlobal("https://raw.githubusercontent.com/mennooo/sqlcl/
 
 var myConnection = connection.init(arguments[0]);
 
-myConnection.ctx.write('Hello world\n');
+myConnection.ctx.write('The following query will be executed: select table_name from user_tables where rownum < 4;\n');
 
-myConnection.sqlcl.setStmt("select table_name from user_tables;");
+myConnection.sqlcl.setStmt("select table_name from user_tables where rownum < 4;");
 myConnection.sqlcl.run();
 
