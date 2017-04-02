@@ -42,3 +42,22 @@ loadWithNewGlobal(
     }
 );
 ```
+
+You should get a similar result:
+
+```
+apr 02, 2017 11:25:45 PM oracle.dbtools.jdbc.util.LogUtil log
+INFO: oracle.dbtools.jdbc.orest.Driver:<clinit>:27:No Message
+apr 02, 2017 11:25:45 PM oracle.dbtools.jdbc.util.LogUtil log
+INFO: oracle.dbtools.jdbc.orest.Driver:<clinit>:34::ORest driver loaded
+Connecting to jdbc:oracle:thin:@localhost:1521:ORCL
+The following query will be executed: select table_name from user_tables where rownum < 4;
+
+TABLE_NAME                                                                      
+--------------------------------------------------------------------------------
+REGIONS
+COUNTRIES
+LOCATIONS
+
+BUILD SUCCESSFUL (total time: 5 seconds)
+```
