@@ -5,7 +5,7 @@ You can test SQLcl scripts with Netbeans without using the commandline tool.
 ## 
 
 * [Requirements](#requirements)
-* [Install](#install)
+* [Add SQLcl JAR files](#add-sqlcl-jar-files)
 * [Create a new project](#create-a-new-project)
 
 ## Requirements
@@ -17,7 +17,8 @@ Download and extract SQLcl.
 
 http://www.oracle.com/technetwork/developer-tools/sqlcl/downloads/index.html
 
-## Add SQLcl jar files to your Netbeans project
+## Add SQLcl JAR files
+We need to add the SQLcl JAR files to our project.
 Rightclick **Libraries** and select **Add JAR/Folder**.
 
 ![Add SQLcl libraries](../img/add_jars.png)
@@ -25,3 +26,5 @@ Rightclick **Libraries** and select **Add JAR/Folder**.
 Go to the folder where you unzipped SQLcl and select all JAR files.
 
 ![Add SQLcl libraries](../img/select_jars.PNG)
+
+## Test 
