@@ -28,3 +28,13 @@ Go to the folder where you unzipped SQLcl and select all JAR files.
 ![Add SQLcl libraries](../img/select_jars.PNG)
 
 ## Test 
+Add this line in your JavaScript file:
+
+```javascript
+loadWithNewGlobal("https://raw.githubusercontent.com/mennooo/sqlcl/master/demos/demo1.js", "<SID>", "<username>", "<password>");
+```
+For example:
+
+```javascript
+loadWithNewGlobal("https://raw.githubusercontent.com/mennooo/sqlcl/master/demos/demo1.js", "ORCL", "hr", "hr");
+```
