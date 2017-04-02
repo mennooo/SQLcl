@@ -23,6 +23,7 @@ This project shows you
 
 # Using the Script Command
 You can load scripts and add them as custom commands. 
+
 Purpose: perfect for automating developer tasks.
 
 In this section is you'll learn how to load and execute a script.
@@ -31,6 +32,7 @@ In this section is you'll learn how to load and execute a script.
 
 # Using the Alias Command
 Aliases are persistent (as opposed to scripts).
+
 Purpose: perfect for creating shortcuts for SQL statements.
 
 In this section is you'll learn how to create, import and execute an alias.
