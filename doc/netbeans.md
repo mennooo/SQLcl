@@ -2,6 +2,10 @@
 
 Netbeans IDE allows you to run and debug your Nashorn scripts.
 
+* [Requirements](#requirements)
+* [Install](#install)
+* [Create a new project](#create-a-new-project)
+
 ## Requirements
 To run the latest version of Nashorn, we need to install JDK 1.8: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
