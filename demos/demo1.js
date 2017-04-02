@@ -4,8 +4,8 @@
  * and open the template in the editor.
  */
 
-var connection = loadWithNewGlobal("https://raw.githubusercontent.com/mennooo/sqlcl/blob/master/lib/connection.js");
-var output = loadWithNewGlobal("https://raw.githubusercontent.com/mennooo/sqlcl/blob/master/lib/output.js");
+var connection = loadWithNewGlobal("https://raw.githubusercontent.com/mennooo/sqlcl/master/lib/connection.js");
+var output = loadWithNewGlobal("https://raw.githubusercontent.com/mennooo/sqlcl/master/lib/output.js");
 
 var myConnection = connection.init({
     sid: 'ORCL',
