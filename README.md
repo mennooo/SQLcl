@@ -1,5 +1,15 @@
 # SQLcl - Scripting
-Learn how to create scripts for SQLcl
+Learn how to create custom scripts for SQLcl.
+
+SQLcl allows you to execute scripts. The main reason is to extend its functionality and automate your tasks as developer.
+
+This way you can interact with both the Database and local files (such as Database Objects and SQL scripts)
+
+You can use scripts in two ways:
+1. Via the ```script``` command
+2. Inside an ```alias```
+
+
 
 # Useful resources
 These are resources I found useful for preparing this project.
