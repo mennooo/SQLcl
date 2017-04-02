@@ -20,6 +20,21 @@ This project shows you
 # Configure SQLcl
 
 ## login.sql
+The login.sql and glogin.sql scripts are executed when you start SQLcl.
+This is the place where you load your SQLcl scripts at startup.
+
+```sql
+SET sqlprompt "_user'@'_connect_identifier > "
+SET sqlformat ansiconsole
+
+-- Load script
+cd D:\sqlcl\scripts
+script helloworld.js
+```
+
+More info:
+- [http://www.adp-gmbh.ch/ora/sqlplus/login.html](http://www.adp-gmbh.ch/ora/sqlplus/login.html)
+- [http://www.talkapex.com/2015/05/sqlcl-and-loginsql/](http://www.talkapex.com/2015/05/sqlcl-and-loginsql/)
 
 # Using the Script Command
 You can load scripts and add them as custom commands. 
