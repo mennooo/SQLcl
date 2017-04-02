@@ -1,9 +1,9 @@
 # The script command
 
-# Relative filepaths
+## Relative filepaths
 
 
-# Creating a custom command
+## Creating a custom command
 SQLcl allows you to add custom commands. For instance:
 
 
