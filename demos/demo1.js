@@ -4,10 +4,8 @@
  * and open the template in the editor.
  */
 
-
-var connection = loadWithNewGlobal("lib/connection.js");
-var output = loadWithNewGlobal("lib/output.js");
-
+var connection = loadWithNewGlobal("https://github.com/mennooo/sqlcl/blob/master/lib/connection.js");
+var output = loadWithNewGlobal("https://github.com/mennooo/sqlcl/blob/master/lib/output.js");
 
 var myConnection = connection.init({
     sid: 'ORCL',
@@ -15,10 +13,7 @@ var myConnection = connection.init({
     password: 'hr'
 });
 
-
 myConnection.ctx.write('Hello world\n');
 
-output.setFileOutput(myConnection.ctx, 'D:\\oracle\\output.txt');
-
-myConnection.sqlcl.setStmt("DDL departments");
+myConnection.sqlcl.setStmt("select * from user_objects;");
 myConnection.sqlcl.run();
