@@ -9,3 +9,28 @@ The Java SE edition is sufficient.
 ## Create a new project
 
 Click File --> New Project..
+
+Select **Java Application** and click **Next**.
+
+![New project - step 1](../img/new_project1.PNG)
+
+Deselect **Create Main Class** and click **Finish**.
+
+![New project - step 2](../img/new_project2.PNG)
+
+Add a new JavaScript file. Rightclick on **Source Packages**.
+
+![New project - add file](../img/add_script.png)
+
+Input a filename and click **Finish**.
+
+![New project - create file](../img/add_js_file.PNG)
+
+Now we can create our first Nashorn script. This line of code should work.
+
+```javascript
+print('Hello world');
+```
+Rightclick inside your file and click **Run File**.
+
+![New project - run file](../img/run_script.png)
