@@ -31,6 +31,7 @@ Go to the folder where you unzipped SQLcl and select all JAR files.
 ## Test 
 Add this line in your JavaScript file and replace the options with your database connection details:
 
+**Please do not use a production database. You should always be careful when entering credentials like this!**
 ```javascript
 loadWithNewGlobal(
     "https://raw.githubusercontent.com/mennooo/sqlcl/master/demos/demo1.js", 
