@@ -35,6 +35,29 @@ Examples:
 
 ### Relative filepaths
 It's (almost) not possible to load scripts using a relative filepath.
+The reason is that a script is loaded as a **string** and then evaluated as a function.
+
+Example:
+```javascript
+eval('print("hello world");');
+```
+
+The context of these variables in a script are empty:
+```javascript
+print(__FILE__, __LINE__, __DIR__);
+```
+
+A workaround could be:
+
+Change the current working directory to the location of the script
+
+`cd <script_dir>`
+
+Now you can load the current directory into a variable in your script
+```javascript
+var FileUtils = Java.type("oracle.dbtools.common.utils.FileUtils");
+var cwd = FileUtils.getCWD(ctx);
+```
 
 ### Changing the OutputStream
 By default the output of a statement is written to the console/terminal. Sometimes you want to write the output to a file for instance.
