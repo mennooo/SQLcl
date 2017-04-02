@@ -19,6 +19,9 @@ This project shows you
 
 # Configure SQLcl
 
+## Add to PATH
+In order to use SQLcl from the command-line in any given directory, you need to add the `sqlcl/bin` folder to the PATH variable. 
+
 ## login.sql
 The login.sql and glogin.sql scripts are executed when you start SQLcl.
 This is the place where you load your SQLcl scripts at startup.
@@ -62,7 +65,7 @@ In this section is you'll learn the basics of writing Nashorn scripts and how to
 - [Basic Nashorn scripts](doc/netbeans.md)
 
 ## Advanced Nashorn scripts to interact with the SQLcl libraries
-In this section I've explored the way to test your SQLcl scripts without use of the commandline tool.
+In this section I've explored the way to test your SQLcl scripts without use of the command-line tool.
 
 - [Advanced Nashorn scripts for SQLcl](doc/netbeans-sqlcl.md)
 
