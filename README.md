@@ -1,3 +1,9 @@
+# Content
+- [SQLcl - Scripting](#sqlcl-scripting)
+- [Configure SQLcl](#configure-sqlcl)
+- [Testing Nashorn scripts with Netbeans IDE](#testing-nashorn-scripts-with-netbeans-ide)
+- [Useful resources](#useful-resources)
+
 # SQLcl - Scripting
 Learn how to create custom scripts for SQLcl.
 
@@ -11,7 +17,19 @@ This project shows you
 - a way to test your SQLcl scripts in Netbeans IDE
 - Lots of examples
 
-# Testing scripts with Netbeans IDE
+# Configure SQLcl
+
+## login.sql
+
+# Using the Script Command
+
+## Sample scripts
+
+# Using the Alias Command
+
+## Sample scripts
+
+# Testing Nashorn scripts with Netbeans IDE
 
 ## Basic Nashorn scripts
 In this section is you'll learn the basics of writing Nashorn scripts and how to install Netbeans EDI.
@@ -25,6 +43,9 @@ In this section I've explored the way to test your SQLcl scripts without use of 
 
 # Useful resources
 These are resources I found useful for preparing this project.
+
+### OTN
+- http://www.oracle.com/technetwork/developer-tools/sqlcl/overview/index.html
 
 ### Blogs
 - http://krisrice.blogspot.com/
