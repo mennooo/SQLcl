@@ -6,21 +6,15 @@
 
 var connection = loadWithNewGlobal("https://raw.githubusercontent.com/mennooo/sqlcl/master/lib/connection.js");
 var output = loadWithNewGlobal("https://raw.githubusercontent.com/mennooo/sqlcl/master/lib/output.js");
-var dbConn = {};
-
-print(arguments);
-
-for (arg in arguments) {
-	print(arg);
-}
 
 var myConnection = connection.init({
-    sid: 'ORCL',
-    username: 'hr',
-    password: 'hr'
+    sid: arguments[0],
+    username: arguments[1],
+    password: arguments[2]
 });
 
 myConnection.ctx.write('Hello world\n');
 
-myConnection.sqlcl.setStmt("select * from user_objects;");
+myConnection.sqlcl.setStmt("select table_name from user_tables;");
 myConnection.sqlcl.run();
+
