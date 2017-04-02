@@ -1,6 +1,6 @@
 # Exploring the Java Libraries
 
-You can use these tools to open the JAR files:
+You can use these tools to open and explore the JAR files:
 - [Netbeans IDE](https://netbeans.org/downloads/)
 - [Java Decompiler](http://jd.benow.ca/)
 
