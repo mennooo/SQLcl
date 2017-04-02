@@ -7,13 +7,7 @@
 var connection = loadWithNewGlobal("https://raw.githubusercontent.com/mennooo/sqlcl/master/lib/connection.js");
 var output = loadWithNewGlobal("https://raw.githubusercontent.com/mennooo/sqlcl/master/lib/output.js");
 
-print(arguments[0]);
-
-var myConnection = connection.init({
-    sid: arguments[0],
-    username: arguments[1],
-    password: arguments[2]
-});
+var myConnection = connection.init(arguments[0]);
 
 myConnection.ctx.write('Hello world\n');
 
