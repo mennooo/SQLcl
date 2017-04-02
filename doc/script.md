@@ -1,1 +1,1 @@
-# Script
+# The script command
