@@ -1,5 +1,7 @@
 # The script command
 
+For help in SQLcl type `help script`.
+
 ## Inline scripts
 Although not very useful, it's the easiest way to execute a script.
 
@@ -23,6 +25,8 @@ SQL> script
 My first script
 SQL>
 ```
+## External scripts
+Command: `script <script name>`
 
 ## Relative filepaths
 
