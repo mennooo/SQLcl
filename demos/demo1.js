@@ -8,6 +8,8 @@ var connection = loadWithNewGlobal("https://raw.githubusercontent.com/mennooo/sq
 var output = loadWithNewGlobal("https://raw.githubusercontent.com/mennooo/sqlcl/master/lib/output.js");
 var dbConn = {};
 
+print(arguments);
+
 for (arg in arguments) {
 	print(arg);
 }
