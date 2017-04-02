@@ -6,6 +6,11 @@ You can use these tools to open and explore the JAR files:
 
 # Globals
 
+These objects are globally exposed in SQLcl.
+
+More info:
+- [https://github.com/oracle/oracle-db-tools/tree/master/sqlcl](https://github.com/oracle/oracle-db-tools/tree/master/sqlcl)
+
 You can get the corresponding class with this JavaScript command:
 
 ```javascript
