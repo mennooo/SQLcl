@@ -38,3 +38,12 @@ Located in **oracle.dbtools-common.jar**
 
 Located in **oracle.dbtools-common.jar**
 
+# Other Java Types
+
+- java.io.FileReader
+- oracle.dbtools.common.utils.FileUtils
+- java.sql.DriverManager
+- oracle.dbtools.raptor.newscriptrunner.CommandRegistry
+- oracle.dbtools.raptor.newscriptrunner.CommandListener
+- java.util.zip.GZIPOutputStream
+
