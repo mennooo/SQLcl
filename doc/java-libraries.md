@@ -40,6 +40,7 @@ Located in **oracle.dbtools-common.jar**
 
 # Other Java Types
 
+- java.io.File
 - java.io.FileReader
 - oracle.dbtools.common.utils.FileUtils
 - java.sql.DriverManager
