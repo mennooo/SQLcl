@@ -55,5 +55,5 @@ To continue, there are two options:
 - [http://www.n-k.de/riding-the-nashorn/](http://www.n-k.de/riding-the-nashorn/)
 
 2. Lean more about Nashorn scripts for SQLcl with Netbeans
-- [Advanced Nashorn scripts for SQLcl](./testing-nashorn-scripts-with-netbeans-ide)
+- [Advanced Nashorn scripts for SQLcl](./testing-nashorn-scripts-with-netbeans-ide.md)
 
