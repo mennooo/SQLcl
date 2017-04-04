@@ -92,14 +92,14 @@ In this section I've explored some relevant methods of the Java types.
 # Real-world examples
 Here are some examples to demostrate the power of SQLcl combined with scripts
 
-## Installing database objects (via the script command)
+## Example: Installing database objects (via the script command)
 I'm actually using this script at my client to automate the installation of database objects in an OTAP environment.
 
 In this section I've explained the way to use this custom command.
 
 - [Example: installing database objects](doc/installing-db-objects.md)
 
-## Realtime APEX monitoring (via the alias command)
+## Example: Realtime APEX monitoring (via the alias command)
 Let SQLcl output your debug & error messages while running an APEX app.
 
 In this section I've explained the way to use this alias.
