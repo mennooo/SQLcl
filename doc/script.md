@@ -12,8 +12,9 @@ Although not very useful, it's the easiest way to execute a script.
 2. Execute script
 
 Type `script` and hit ENTER.
+
+Type a script:
 ```
-script 
 ctx.write('My first script\n');
 /
 ```
@@ -37,22 +38,26 @@ Examples:
 
 ## Tips
 
-### Relative filepaths
+### Relative filepaths within the load function
 It's (almost) not possible to load scripts using a relative filepath.
 
-`script <script_dir>/example.js`
+`script <script_dir>/load.js`
 
 ```javascript
-//example.js
-load("./another-script.js");
+//load.js
+
+// Load a script in same directory as load.js
+load("helloworld.js");
 // Fails to load the script
 ```
+
+![Relative load error](../img/error_relative_load.PNG)
 
 The reason is that a script is loaded as a **string** and then evaluated as a function. The directory where SQLcl tries to find the file is the directory where you started SQLcl.
 
 Example of script evaluation:
 ```javascript
-eval('load("./another-script.js");');
+eval('load("another-script.js");');
 ```
 
 The context of these variables in a script are empty:
@@ -66,15 +71,20 @@ Change the current working directory to the location of the script
 
 ```
 cd <script_dir>
-script example.js
+script load.js
 ```
 
 Now you can load the current directory into a variable in your script
 ```javascript
-//example.js
+//load.js
 
+// Java Class to get the current directory
 var FileUtils = Java.type("oracle.dbtools.common.utils.FileUtils");
+
+// Load directory into a variable
 var cwd = FileUtils.getCWD(ctx);
+
+load(cwd + '/helloworld.js');
 ```
 
 ### Changing the OutputStream
