@@ -62,13 +62,16 @@ So we need three JavaScript libraries to create this script:
 I've chosen to work in several layers. This keeps things nice and tidy.
 
 1. add_install_command.js
-loads command.js
-2. command.js
-loads release.js
-3. release.js
-loads file.js, dbobject.js and output.js
 
-command.js --> 
+loads: command.js
+
+2. command.js
+
+loads: release.js
+
+3. release.js
+
+loads: file.js, dbobject.js and output.js
 
 ```javascript
 // file: add_install_command.js
