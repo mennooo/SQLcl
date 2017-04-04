@@ -61,12 +61,16 @@ Purpose: Dealing with the filesystem
 
 Docs: [https://docs.oracle.com/javase/8/docs/api/java/io/File.html](https://docs.oracle.com/javase/8/docs/api/java/io/File.html)
 
+My library to work with the filesystem and read file contentd
 - [file.js](../lib/file.js)
 
 ## java.io.FileReader
 Purpose: Reading file contents
 
 Docs: [https://docs.oracle.com/javase/8/docs/api/java/io/FileReader.html](https://docs.oracle.com/javase/8/docs/api/java/io/FileReader.html)
+
+Again my library to work with the filesystem and read file contentd
+- [file.js](../lib/file.js)
 
 - oracle.dbtools.common.utils.FileUtils
 Purpose: File utilities for SQLcl
