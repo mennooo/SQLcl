@@ -103,3 +103,13 @@ myConnection.sqlcl.run();
 
 ## Running a script in SQLcl
 
+For running scripts in SQLcl, you can remove the overhead to create a connection.
+
+```javascript
+// demo2.js
+// load this script from SQLcl: script <your_script_name>
+
+// Let's run a Database Statement
+sqlcl.setStmt("select table_name from user_tables where rownum < 4;");
+sqlcl.run();
+```
