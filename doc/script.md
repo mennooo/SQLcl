@@ -71,15 +71,20 @@ Change the current working directory to the location of the script
 
 ```
 cd <script_dir>
-script example.js
+script load.js
 ```
 
 Now you can load the current directory into a variable in your script
 ```javascript
-//example.js
+//load.js
 
+// Java Class to get the current directory
 var FileUtils = Java.type("oracle.dbtools.common.utils.FileUtils");
+
+// Load directory into a variable
 var cwd = FileUtils.getCWD(ctx);
+
+load(cwd + '/helloworld');
 ```
 
 ### Changing the OutputStream
