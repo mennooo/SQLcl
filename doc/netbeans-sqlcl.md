@@ -3,6 +3,11 @@
 You can test SQLcl scripts with Netbeans without using the commandline tool.
 This approach is much more efficient than reloading your script in SQLcl after you've made a change.
 
+To run SQLcl scripts outside of SQLcl we do need create a database connection and make the same `globals` available as in SQLcl.
+
+**Once your finished testing, remove the part to create the database connection from your script. SQLcl will take care of this
+!**
+
 ## 
 
 * [Requirements](#requirements)
@@ -63,3 +68,38 @@ LOCATIONS
 
 BUILD SUCCESSFUL (total time: 5 seconds)
 ```
+
+## Create your own script for Netbeans
+
+The purpose of the test script above was only to check if your Netbeans project is correct. The next step is to create your own script.
+
+Let's look at contents of the demo script and run it locally.
+
+```javascript
+// A library to create a connection and return SQLcl globals
+var connection = loadWithNewGlobal("https://raw.githubusercontent.com/mennooo/sqlcl/master/lib/connection.js");
+
+// Set your connection details
+var myConnection = connection.init({
+    sid: "ORCL",
+    host: "localhost",
+    port: "1521",
+    username: "hr",
+    password: "hr"
+});
+
+/*
+    The variable connection contains three SQLcl objects:
+    - sqlcl
+    - ctx
+    - util
+    
+*/
+
+// Let's run a Database Statement
+myConnection.sqlcl.setStmt("select table_name from user_tables where rownum < 4;");
+myConnection.sqlcl.run();
+```
+
+## Running a script in SQLcl
+
