@@ -15,7 +15,7 @@ To run the latest version of Nashorn, we need to install JDK 1.8: http://www.ora
 You can download Netbeans IDE 8.2 from 
 - [https://netbeans.org/downloads/](https://netbeans.org/downloads/)
 
-The Java SE edition is sufficient.
+Choose the Java EE edition because it includes JavaScript.
 
 ## Create a new project
 
@@ -30,6 +30,7 @@ Deselect **Create Main Class** and click **Finish**.
 ![New project - step 2](../img/new_project2.PNG)
 
 Add a new JavaScript file. Rightclick on **Source Packages**.
+Choose **New** --> **Other**.
 
 ![New project - add file](../img/add_script.png)
 
