@@ -44,3 +44,5 @@ Execute statement: `dbms_utility.compile_schema`
 
 ### Create a logfile with a summary
 output.js: Redirect OutputStream to a logfile
+
+So we need three JavaScript libraries to create this script.
