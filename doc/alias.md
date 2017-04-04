@@ -77,7 +77,7 @@ select &&answer from dual;
 </aliases>		
 ```
 
-- [Source XML](../aliases/example_alias.xml)
+- [Source XML](../aliases/sample_alias.xml)
 
 ![Inline alias with bind variable](../img/sample_alias.PNG)
 
