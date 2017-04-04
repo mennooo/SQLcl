@@ -95,7 +95,9 @@ var conn2 = DriverManager.getConnection(jdbc,user,pass);
 ## oracle.dbtools.raptor.newscriptrunner.CommandRegistry
 Purpose: Adding custom commands to SQLcl
 
-- [https://github.com/oracle/oracle-db-tools/sqlcl/examples/customCommand.js](https://github.com/oracle/oracle-db-tools/sqlcl/examples/customCommand.js)
-- oracle.dbtools.raptor.newscriptrunner.CommandListener
-- java.util.zip.GZIPOutputStream
+- [https://github.com/oracle/oracle-db-tools/blob/master/sqlcl/examples/customCommand.js](https://github.com/oracle/oracle-db-tools/blob/master/sqlcl/examples/customCommand.js)
 
+## oracle.dbtools.raptor.newscriptrunner.CommandListener
+Purpose: Listening for custom commands in SQLcl
+
+See above
