@@ -82,14 +82,14 @@ Purpose: code to install a release
 
 va gCommand = "install";
 
-var release = loadWithGlobal("release.js");
 var releases = loadWithGlobal("releases.js");
+var release = loadWithGlobal("release.js");
 var command = loadWithGlobal("command.js", ctx);
 
 // Possible commands
 // install list: list the possible releases
 // install check <release>: check if the release complies
-// install <release> start the installation
+// install release <release> start the installation
 
 if (arguments[0] = gCommand) {
 
@@ -103,7 +103,7 @@ if (arguments[0] = gCommand) {
       actions: [
           "list": releases.list
           "check": release.check
-          "install": release.install
+          "release": release.install
       ]
     }
   });
