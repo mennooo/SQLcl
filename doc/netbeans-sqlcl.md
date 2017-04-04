@@ -39,7 +39,7 @@ Add this line in your JavaScript file and replace the options with your database
 **Please do not use a production database. You should always be careful when entering credentials like this!**
 ```javascript
 loadWithNewGlobal(
-    "https://raw.githubusercontent.com/mennooo/sqlcl/master/demos/demo1.js", 
+    "https://raw.githubusercontent.com/mennooo/sqlcl/master/demos/test_for_netbeans.js", 
     {
         sid: "ORCL",
         host: "localhost",
@@ -49,6 +49,8 @@ loadWithNewGlobal(
     }
 );
 ```
+
+- [The test_for_netbeans.js script](../demos/test_for_netbeans.js)
 
 You should get a similar result when you run the script:
 
