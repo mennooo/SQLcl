@@ -54,11 +54,48 @@ Located in **oracle.dbtools-common.jar**
 
 # Other Java Types
 
-- java.io.File
-- java.io.FileReader
+## java.io.File
+Purpose: Dealing with the filesystem
+- Read directories
+- Get file properties
+
+Docs: [https://docs.oracle.com/javase/8/docs/api/java/io/File.html](https://docs.oracle.com/javase/8/docs/api/java/io/File.html)
+
+## java.io.FileReader
+Purpose: Reading file contents
+
+Docs: [https://docs.oracle.com/javase/8/docs/api/java/io/FileReader.html](https://docs.oracle.com/javase/8/docs/api/java/io/FileReader.html)
+
 - oracle.dbtools.common.utils.FileUtils
-- java.sql.DriverManager
-- oracle.dbtools.raptor.newscriptrunner.CommandRegistry
+Purpose: File utilities for SQLcl
+- Useful to get the current working directory
+
+```javascript
+var FileUtils = Java.type("oracle.dbtools.common.utils.FileUtils");
+var cwd = FileUtils.getCWD(ctx);
+```
+
+## java.sql.DriverManager
+Purpose: JDBC connections
+- Useful to get a JDBC connection
+
+```javascript
+var DriverManager = Java.type("java.sql.DriverManager");
+
+// Create a new connection to use for monitoring
+// Grab the connect URL from the base connection in sqlcl
+var jdbc = conn.getMetaData().getURL();
+var user = 'hr';
+var pass = 'hr';
+
+//connect
+var conn2 = DriverManager.getConnection(jdbc,user,pass);
+```
+
+## oracle.dbtools.raptor.newscriptrunner.CommandRegistry
+Purpose: Adding custom commands to SQLcl
+
+- [https://github.com/oracle/oracle-db-tools/sqlcl/examples/customCommand.js](https://github.com/oracle/oracle-db-tools/sqlcl/examples/customCommand.js)
 - oracle.dbtools.raptor.newscriptrunner.CommandListener
 - java.util.zip.GZIPOutputStream
 
