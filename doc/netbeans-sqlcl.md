@@ -101,7 +101,13 @@ myConnection.sqlcl.setStmt("select table_name from user_tables where rownum < 4;
 myConnection.sqlcl.run();
 ```
 
-## Running a script in SQLcl
+Running this one select statement was just the start. Now you're ready to learn all about the scripting possibilities with SQLcl.
+
+To learn more about SQLcl scripting possibilities like interacting with the filesystem, changing the output stream and automating your tasks, take a look at this chapter:
+
+- [The script command](./script.md)
+
+## Changing a script for usage in SQLcl
 
 For running scripts in SQLcl, you can remove the overhead to create a connection.
 
