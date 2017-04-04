@@ -1,5 +1,5 @@
 # The script command
-
+Purpose: run JavaScript scripts in SQLcl.
 For help in SQLcl type `help script`.
 
 ## Inline scripts
@@ -27,6 +27,14 @@ SQL>
 ```
 ## External scripts
 Command: `script <script name>`
+
+You can run local scripts from your filesystem:
+
+`script d:\scripts\helloworld.js`
+
+Or run scripts via an URL:
+
+`script https://raw.githubusercontent.com/mennooo/sqlcl/master/demo/demo.js`
 
 Examples:
 [https://github.com/oracle/oracle-db-tools/tree/master/sqlcl/examples](https://github.com/oracle/oracle-db-tools/tree/master/sqlcl/examples)
