@@ -1,5 +1,17 @@
 # Exploring the Java Libraries
 
+SQLcl is a bundle of JAR files. These JAR files contain all the Java code to run SQLsl.
+
+In our scripts, we can refer to the Java Classes and use their methods:
+
+```javascript
+// Load the class
+var StringUtils = Java.type("oracle.dbtools.common.utils.StringUtils");
+
+print(StringUtils.initCapSingle("sqlcl is awesome"));
+// Result: Sqlcl is awesome
+```
+
 You can use these tools to open and explore the JAR files:
 - [Netbeans IDE](https://netbeans.org/downloads/)
 - [Java Decompiler](http://jd.benow.ca/)
