@@ -5,6 +5,11 @@ For help in SQLcl type `help script`.
 
 The scripts are runned immediately.
 
+# Contents
+- [Inline scripts](#inline-scripts)
+- [External scripts](#external-scripts)
+- [Tips](#tips)
+
 ## Inline scripts
 Although not very useful, it's the easiest way to execute a script.
 
