@@ -63,15 +63,19 @@ I've chosen to work in several layers. This keeps things nice and tidy.
 
 1: add_install_command.js
 
-loads: command.js, release.js
+Purpose: configure the 'install' command for SQLcl
 
 2: command.js
 
-loads nothing
+Purpose: adds a new custom command
 
-3: release.js
+3: releases.js
 
-loads: file.js, dbobject.js and output.js
+Purpose: list all posible releases to install
+
+4: release.js
+
+Purpose: code to install a release
 
 ```javascript
 // file: add_install_command.js
