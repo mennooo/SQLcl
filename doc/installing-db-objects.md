@@ -89,6 +89,7 @@ var command = loadWithGlobal("command.js", ctx);
 
 if (arguments[0] = gCommand) {
 
+  // remove first argument, which is the command
   var actionArgs = arguments.shift();
 
   command.add({
