@@ -30,7 +30,7 @@ Not in the scope:
 
 ## Lets transform this into required JavaScript Libraries
 ### Collect all database objects in the release
-files.js: collect all files in release directory
+file.js: collect all files in release directory
 
 ### Check if the release complies with our demands
 dbobject.js: Perform checks on file content
