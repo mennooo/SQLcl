@@ -81,3 +81,6 @@ select &&answer from dual;
 
 ![Inline alias with bind variable](../img/sample_alias.PNG)
 
+# Tips
+
+The alias command expects all bind variables are substituted. Therefor you should use the **custom command** approach when the number of arguments can differ.
