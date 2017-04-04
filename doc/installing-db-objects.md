@@ -78,29 +78,24 @@ loads: file.js, dbobject.js and output.js
 
 var release = loadWithGlobal("release.js");
 var releases = loadWithGlobal("releases.js");
-var command = loadWithGlobal("command.js");
+var command = loadWithGlobal("command.js", ctx);
 
 // Possible commands
 // install list: list the possible releases
 // install check <release>: check if the release complies
 // install <release> start the installation
 
-var cmdArg = arguments[0],
-    releaseArg = arguments[1];
-
-if (cmdArg === "list") {
-  releases.list();
-}
-
-if (cmdArg === "check") {
-  release.check(release);
-};
-
-if (cmdArg === "install" {
-  release.install(release);
-}
-
-
+command.add({
+  handle: {
+    command: 'install',
+    arguments: arguments
+    actions: [
+        "list": release.list
+        "check": release.check
+        "install": release.install
+    ]
+  }
+});
 
 ```
 
