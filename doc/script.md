@@ -12,8 +12,9 @@ Although not very useful, it's the easiest way to execute a script.
 2. Execute script
 
 Type `script` and hit ENTER.
+
+Type a script:
 ```
-script 
 ctx.write('My first script\n');
 /
 ```
