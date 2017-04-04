@@ -29,17 +29,18 @@ Not in the scope:
 - Create a logfile with a summary
 
 ## Lets transform this into required JavaScript Libraries
-- Collect all database objects in the release
+### Collect all database objects in the release
 files.js: collect all files in release directory
 
-- Check if the release complies with our demands
+### Check if the release complies with our demands
 dbobject.js: Perform checks on file content
 
-- Install the database objects in the correct schema
-Common SQLcl: @<filename>
+### Install the database objects in the correct schema
 
-- Recompile invalid objects
+Common SQLcl: `@<filename>`
+
+### Recompile invalid objects
 Execute statement: `dbms_utility.compile_schema`
 
-- Create a logfile with a summary
+### Create a logfile with a summary
 output.js: Redirect OutputStream to a logfile
