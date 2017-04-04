@@ -2,7 +2,7 @@
 
 Purpose:
 
-In an OTAP environment, we want to automate the task of intalling database object of a release.
+In an OTAP environment, we want to automate the task of installing database object of a release.
 
 A release could include:
 - packages
