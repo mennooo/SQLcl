@@ -11,6 +11,8 @@ Learn how to create custom scripts for SQLcl.
 
 SQLcl allows you to execute scripts. The main reason is to extend its functionality and automate your tasks as developer. This way you can interact with both the Database and local files (such as Database Objects and SQL scripts)
 
+The JavaScript Engine for SQLcl is Oracle Nashorn.
+
 You can use scripts in two ways:
 1. Via the ```script``` command
 2. Inside an ```alias```
@@ -63,6 +65,10 @@ In this section is you'll learn how to create, import/export and execute an alia
 - [The alias command](doc/alias.md)
 
 # Testing Nashorn scripts with Netbeans IDE
+
+It can be a lot quicker to write and test Nashorn scripts with Netbeans IDE. The advantage is that you don't have to save and rerun your script in SQLcl everytime. It also provides debugging options.
+
+The Nashorn JavaScript engine is included in Java JDK 8.
 
 ## Basic Nashorn scripts
 In this section is you'll learn the basics of writing Nashorn scripts and how to install Netbeans EDI.

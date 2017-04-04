@@ -12,7 +12,8 @@ To run the latest version of Nashorn, we need to install JDK 1.8: http://www.ora
 
 ## Install
 
-You can download Netbeans IDE 8.2 from https://netbeans.org/downloads/
+You can download Netbeans IDE 8.2 from 
+- [https://netbeans.org/downloads/](https://netbeans.org/downloads/)
 
 The Java SE edition is sufficient.
 
