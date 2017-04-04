@@ -72,7 +72,7 @@ Docs: [https://docs.oracle.com/javase/8/docs/api/java/io/FileReader.html](https:
 Again my library to work with the filesystem and read file contentd
 - [file.js](../lib/file.js)
 
-- oracle.dbtools.common.utils.FileUtils
+## oracle.dbtools.common.utils.FileUtils
 Purpose: File utilities for SQLcl
 - Useful to get the current working directory
 
