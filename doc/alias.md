@@ -9,7 +9,7 @@ Aliases are stored in your Application Data folder. For example:
 
 ## Create an alias
 
-### Creating an alias inline
+### Create an alias inline
 
 The most basic alias is created with this statement:
 
