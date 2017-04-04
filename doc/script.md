@@ -41,6 +41,20 @@ Examples:
 
 ## Tips
 
+### Loading scripts at startup
+
+Scripts are non-persistent in SQLcl. This is a pity for custom commands.
+But we load our custom commands if we execute our scripts at startup of SQLcl. You can do this by editing the login.sql.
+
+```sql
+SET sqlprompt "_user'@'_connect_identifier > "
+SET sqlformat ansiconsole
+
+-- Load script
+cd D:\sqlcl\scripts
+script helloworld.js
+```
+
 ### Relative filepaths within the load function
 It's (almost) not possible to load scripts using a relative filepath.
 
