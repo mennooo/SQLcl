@@ -46,3 +46,14 @@ print('Hello world');
 Rightclick inside your file and click **Run File**.
 
 ![New project - run file](../img/run_script.png)
+
+Congratulations, You've just created your first Nashorn script!
+
+To continue, there are two options:
+
+1. Learn more about Nashorn scripting
+- [http://www.n-k.de/riding-the-nashorn/](http://www.n-k.de/riding-the-nashorn/)
+
+2. Lean more about Nashorn scripts for SQLcl with Netbeans
+- [Advanced Nashorn scripts for SQLcl](testing-nashorn-scripts-with-netbeans-ide)
+
