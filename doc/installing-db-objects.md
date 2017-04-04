@@ -77,6 +77,7 @@ loads: file.js, dbobject.js and output.js
 // file: add_install_command.js
 
 var release = loadWithGlobal("release.js");
+var releases = loadWithGlobal("releases.js");
 var command = loadWithGlobal("command.js");
 
 // Possible commands
@@ -84,21 +85,20 @@ var command = loadWithGlobal("command.js");
 // install check <release>: check if the release complies
 // install <release> start the installation
 
-var cmd,
-    release;
+var cmdArg = arguments[0],
+    releaseArg = arguments[1];
 
-for (arg in arguments) {
-  if (arg === 0) {
-    command = arguments[0];
-  }
-  if (arg === 1) {
-    release === arguments[1];
-  }
+if (cmdArg === "list") {
+  releases.list();
 }
 
-if (command === "check") {
+if (cmdArg === "check") {
   release.check(release);
 };
+
+if (cmdArg === "install" {
+  release.install(release);
+}
 
 
 
@@ -107,15 +107,19 @@ if (command === "check") {
 ```javascript
 // file: release.js
 
-//var file = loadWithGlobal("file.js");
-var dbobject = loadWithGlobal("dbobject.js");
-var output = loadWithGlobal("output.js");
+(function() {
 
-function check(release) {
-  dbobject.check(release);
-};
+    var dbobject = loadWithGlobal("dbobject.js");
+    var output = loadWithGlobal("output.js");
 
-function install(release) {
-  dbobject.install(release);
-}
+    function check(release) {
+      dbobject.check(release);
+    };
+
+    function install(release) {
+      dbobject.install(release);
+    }
+
+})();
+
 ```
