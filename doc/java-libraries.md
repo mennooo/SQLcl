@@ -16,6 +16,8 @@ You can use these tools to open and explore the JAR files:
 - [Netbeans IDE](https://netbeans.org/downloads/)
 - [Java Decompiler](http://jd.benow.ca/)
 
+It's pretty cool to have a look inside but only a couple of classes and methods are worth mentioning. Most of the tasks we want our script to do can be done with the globals provided by SQLcl.
+
 # Globals
 
 These objects are globally exposed in SQLcl.
