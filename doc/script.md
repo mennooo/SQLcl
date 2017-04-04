@@ -37,16 +37,20 @@ Examples:
 
 ## Tips
 
-### Relative filepaths
+### Relative filepaths within the load function
 It's (almost) not possible to load scripts using a relative filepath.
 
-`script <script_dir>/example.js`
+`script <script_dir>/load.js`
 
 ```javascript
-//example.js
-load("./another-script.js");
+//load.js
+
+// Load a script in same directory as load.js
+load("helloworld.js");
 // Fails to load the script
 ```
+
+![Relative load error](../img/error_relative_load.PNG)
 
 The reason is that a script is loaded as a **string** and then evaluated as a function. The directory where SQLcl tries to find the file is the directory where you started SQLcl.
 
