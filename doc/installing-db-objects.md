@@ -59,17 +59,29 @@ So we need three JavaScript libraries to create this script:
 
 ## The script
 
+I've chosen to work in several layers. This keeps things nice and tidy.
+
+1. add_install_command.js
+loads command.js
+2. command.js
+loads release.js
+3. release.js
+loads file.js, dbobject.js and output.js
+
+command.js --> 
+
 ```javascript
 // file: add_install_command.js
 
 var release = loadWithGlobal("release.js");
+var command = loadWithGlobal("command.js");
 
 // Possible commands
 // install list: list the possible releases
 // install check <release>: check if the release complies
 // install <release> start the installation
 
-var command,
+var cmd,
     release;
 
 for (arg in arguments) {
@@ -92,15 +104,9 @@ if (command === "check") {
 ```javascript
 // file: release.js
 
-var command = loadWithGlobal("command.js");
-var file = loadWithGlobal("file.js");
+//var file = loadWithGlobal("file.js");
 var dbobject = loadWithGlobal("dbobject.js");
 var output = loadWithGlobal("output.js");
-
-// Possible commands
-// install list: list the possible releases
-// install check <release>: check if the release complies
-// install <release> start the installation
 
 function check(release) {
   dbobject.check(release);
@@ -109,6 +115,4 @@ function check(release) {
 function install(release) {
   dbobject.install(release);
 }
-
-var releaseFiles = file.getFilesInDir();
 ```
