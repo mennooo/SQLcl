@@ -29,7 +29,55 @@ Purpose: Adding a new alias from an XML file
 
 This allows you to add previously created aliases, maybe created by others.
 
-alias load <alias.xml>
+alias load `<alias.xml>`
 
+Example:
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<aliases xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="aliases.xsd">
+	<alias name="hello_world">
+		<description><![CDATA[An example for APEXCONN17]]></description>
+		<queries> 
+			<query>
+				<sql><![CDATA[
 
+script
+  // turn on Substitutions manually
+  // normally this is done when the accept /scan/ var/define commands are used
+  ctx.setSubstitutionOn(true);
+  var answer=null;
+
+  // silly loop
+  while(answer != '42' ) {
+     // prompt and return the input.
+     // last false flag is for hide for use with things like passwords not to echo
+     answer = ctx.getPromptedFieldProvider().getPromptedField(ctx, 'The answer to the ultimate question?', false);
+     if ( answer != '42' ) {
+        ctx.write("Your Guess : " + answer + " is WRONG\n");
+     }
+     out.flush();
+  }
+
+// put the answer into the map of things to Substitution
+ctx.getMap().put("ANSWER",answer);
+/
+
+prompt
+prompt running:  select ^ANSWER from dual;
+prompt
+
+select &&answer from dual;
+
+]]>
+                    </sql>
+            </query>
+        </queries>		
+    </alias>
+</aliases>		
+```
+
+- [Source XML](../aliases/example_alias.xml)
+
+![Inline alias with bind variable](../img/sample_alias.PNG)
 
