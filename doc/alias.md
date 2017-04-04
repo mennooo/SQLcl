@@ -83,4 +83,4 @@ select &&answer from dual;
 
 # Tips
 
-The alias command expects all bind variables are substituted. Therefor you should use the **custom command** approach when the number of arguments can differ.
+The alias command expects all bind variables are substituted. Therefore you should use the **custom command** approach when the number of arguments can differ.
