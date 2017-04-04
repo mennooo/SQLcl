@@ -9,6 +9,14 @@ Aliases are stored in your Application Data folder. For example:
 
 ## Create an alias
 
+### Creating an alias inline
+
+The most basic alias is created with this statement:
+
+`alias mytables=select table_name from user_tables where rownum < 4;`
+
+![Inline alias](../img/inline_alias.PNG)
+
 ## import an alias
 Purpose: Adding a new alias from an XML file
 
