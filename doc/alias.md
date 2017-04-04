@@ -17,6 +17,13 @@ The most basic alias is created with this statement:
 
 ![Inline alias](../img/inline_alias.PNG)
 
+Bind variables can be used too.
+
+`alias mytables=select table_name from user_tables where lower(table_name) like '%' || :1 || '%';`
+
+![Inline alias with bind variable](../img/inline_alias_bind.PNG)
+
+
 ## import an alias
 Purpose: Adding a new alias from an XML file
 
