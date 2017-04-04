@@ -37,7 +37,7 @@ dbobject.js: Perform checks on file content
 
 ### Install the database objects in the correct schema
 
-Common SQLcl: `@<filename>`
+This can be done with common SQLcl: `@<filename>`
 
 ### Recompile invalid objects
 Execute statement: `dbms_utility.compile_schema`
