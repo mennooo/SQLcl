@@ -89,7 +89,7 @@ var myConnection = connection.init({
 });
 
 /*
-    The variable connection contains three SQLcl objects:
+    The variable connection contains the three SQLcl global objects:
     - sqlcl
     - ctx
     - util
