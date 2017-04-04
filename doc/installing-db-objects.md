@@ -96,7 +96,7 @@ if (command.getCommand(arguments) = gCommand) {
   command.add({
     handle: {
       command: gCommand,
-      args: command.getActionArguments(arguments),
+      ActionArguments: command.getActionArguments(arguments),
       actions: [
           "list": releases.list
           "check": release.check
