@@ -57,7 +57,7 @@ The reason is that a script is loaded as a **string** and then evaluated as a fu
 
 Example of script evaluation:
 ```javascript
-eval('load("./another-script.js");');
+eval('load("another-script.js");');
 ```
 
 The context of these variables in a script are empty:
@@ -84,7 +84,7 @@ var FileUtils = Java.type("oracle.dbtools.common.utils.FileUtils");
 // Load directory into a variable
 var cwd = FileUtils.getCWD(ctx);
 
-load(cwd + '/helloworld');
+load(cwd + '/helloworld.js');
 ```
 
 ### Changing the OutputStream
