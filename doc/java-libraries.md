@@ -61,7 +61,7 @@ Purpose: Dealing with the filesystem
 
 Docs: [https://docs.oracle.com/javase/8/docs/api/java/io/File.html](https://docs.oracle.com/javase/8/docs/api/java/io/File.html)
 
-- [file.js](../blob/master/lib/file.js)
+- [file.js](../lib/file.js)
 
 ## java.io.FileReader
 Purpose: Reading file contents
