@@ -91,7 +91,7 @@ var command = loadWithGlobal("command.js", ctx);
 // install check <release>: check if the release complies
 // install release <release> start the installation
 
-if (arguments[0] = gCommand) {
+if (command.getCommand(arguments) = gCommand) {
 
   command.add({
     handle: {
