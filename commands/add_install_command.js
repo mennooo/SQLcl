@@ -4,9 +4,14 @@
 
 var gCommand = "install";
 
-var releases = loadWithNewGlobal("C:\\Users\\mhoogendijk\\Documents\\sqlcl\\lib\\releases.js");
-var release = loadWithNewGlobal("C:\\Users\\mhoogendijk\\Documents\\sqlcl\\lib\\release.js");
+// lirabry to add a custom command
 var command = loadWithNewGlobal("C:\\Users\\mhoogendijk\\Documents\\sqlcl\\lib\\command.js");
+
+// Library to install releases
+var release = loadWithNewGlobal("C:\\Users\\mhoogendijk\\Documents\\sqlcl\\lib\\release.js");
+
+// Set the baseDir
+release.setBaseDir("C:\\Users\\mhoogendijk\\stack\\Qualogy\\presentation\\sqlcl\\releases");
 
 // Possible commands
 // install list: list the possible releases
@@ -14,23 +19,21 @@ var command = loadWithNewGlobal("C:\\Users\\mhoogendijk\\Documents\\sqlcl\\lib\\
 // install release <release> start the installation
 
 command.add({
-
     command: gCommand,
     info: "Install new releases.\nTo list all releases type install list\nTo install a release type install <release>",
-    actions: [
-        {
-          name: "list",
-          action: releases.list
+    actions: [{
+            name: "list",
+            action: release.listAll
         },
         {
-          name: "check",
-          action: release.check
-         },
+            name: "check",
+            action: release.check
+        },
         {
-          name: "release",
-          action: release.install
+            name: "release",
+            action: release.install
         }
     ],
-  begin: function() {},
-  end: function() {}
+    begin: function() {},
+    end: function() {}
 });
