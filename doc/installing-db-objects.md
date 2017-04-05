@@ -97,9 +97,9 @@ command.add({
   handle: {
     command: gCommand,
     actions: [
-        "list": releases.list
-        "check": release.check
-        "release": release.install
+        {"list": releases.list},
+        {"check": release.check},
+        {"release": release.install}
     ]
   }
 });
