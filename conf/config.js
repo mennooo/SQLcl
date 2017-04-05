@@ -2,7 +2,7 @@
 
 (function() {
 
-    var version = "1.1.8";
+    var version = "1.1.911";
 
     print("loading config, version", version);
 
