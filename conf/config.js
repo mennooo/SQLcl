@@ -9,13 +9,13 @@
     var baseDir = "C:/Users/mhoogendijk/stack/Qualogy/presentation/sqlcl/releases";
 
     var objectTypes = [{
-            type: "script"
+            type: "script",
             extension: "sql",
             versioning: false,
             dbType: null
         },
         {
-            type: "view"
+            type: "view",
             extension: "vw",
             versioning: false,
             dbType: "view"

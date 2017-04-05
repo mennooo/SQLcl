@@ -8,10 +8,6 @@ var gCommand = "install";
 var command = loadWithNewGlobal("C:/Users/mhoogendijk/Documents/sqlcl/lib/command.js");
 var v = Math.random().toString(36).substring(7);
 
-var System = Java.type("java.lang.System");
-
-print(System.getProperty("nashorn.persistent.code.cache"));
-
 // local configuration
 var config = loadWithNewGlobal("https://raw.githubusercontent.com/mennooo/sqlcl/master/conf/config.js?v=" + v);
 
