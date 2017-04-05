@@ -4,6 +4,8 @@
 
     var version = "1.1.1";
 
+    print("loading config, version", version);
+
     var baseDir = "C:/Users/mhoogendijk/stack/Qualogy/presentation/sqlcl/releases";
 
     var objectTypes = {
