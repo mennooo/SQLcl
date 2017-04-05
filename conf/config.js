@@ -1,4 +1,4 @@
-var config = {
+var conf = {
     objectTypes: {
         script: {
             extension: "sql",
@@ -45,6 +45,6 @@ var config = {
 
 (function() {
 
-    return config;
+    return conf;
 
 })();
