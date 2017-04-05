@@ -1,4 +1,8 @@
+// Relplace this with your own configuration
+
 (function() {
+
+    var baseDir = "C:/Users/mhoogendijk/stack/Qualogy/presentation/sqlcl/releases";
 
     var objectTypes = {
         script: {
@@ -44,6 +48,7 @@
     }
 
     return {
+        baseDir: baseDir,
         objectTypes: objectTypes
     };
 
