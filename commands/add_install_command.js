@@ -4,16 +4,8 @@
 
 var gCommand = "install";
 
-var FileUtils = Java.type("oracle.dbtools.common.utils.FileUtils");
-
-var lala = 'C:/Users/mhoogendijk/stack/Qualogy/presentation/sqlcl/demo/test.js';
-
-
-
-print(lala.replace("\\","\\\\"))
-
 // lirabry to add a custom command
-var command = loadWithNewGlobal("C:\\Users\\mhoogendijk\\Documents\\sqlcl\\lib\\command.js");
+var command = loadWithNewGlobal("C:/Users/mhoogendijk/Documents/sqlcl/lib/command.js");
 
 // Library to install releases
 var release = loadWithNewGlobal("C:\\Users\\mhoogendijk\\Documents\\sqlcl\\lib\\release.js");
