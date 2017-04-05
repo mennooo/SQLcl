@@ -8,7 +8,7 @@ var config = {
         view: {
             extension: "vw",
             versioning: false,
-            dbType: view
+            dbType: "view"
         },
         packageSpec: {
             extension: "pks",
