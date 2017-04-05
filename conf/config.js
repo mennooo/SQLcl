@@ -8,48 +8,55 @@
 
     var baseDir = "C:/Users/mhoogendijk/stack/Qualogy/presentation/sqlcl/releases";
 
-    var objectTypes = {
-        script: {
+    var objectTypes = [{
+            type: "script"
             extension: "sql",
             versioning: false,
             dbType: null
         },
-        view: {
+        {
+            type: "view"
             extension: "vw",
             versioning: false,
             dbType: "view"
         },
-        packageSpec: {
+        {
+            type: "packageSpec",
             extension: "pks",
             versioning: true,
             dbType: "package"
         },
-        packageBody: {
+        {
+            type: "packageBody",
             extension: "pkb",
             versioning: true,
             dbType: "package"
         },
-        typeSpec: {
+        {
+            type: "typeSpec",
             extension: "typ",
             versioning: false,
             dbType: "type"
         },
-        typeBody: {
+        {
+            type: "typeBody",
             extension: "tyb",
             versioning: false,
             dbType: "type"
         },
-        trigger: {
+        {
+            type: "trigger",
             extension: "trg",
             versioning: false,
             dbType: "trigger"
         },
-        procedure: {
+        {
+            type: "procedure",
             extension: "prc",
             versioning: false,
             dbType: "procedure"
         }
-    }
+    ];
 
     return {
         version: version,

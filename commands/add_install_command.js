@@ -6,9 +6,14 @@ var gCommand = "install";
 
 // lirabry to add a custom command
 var command = loadWithNewGlobal("C:/Users/mhoogendijk/Documents/sqlcl/lib/command.js");
+var v = Math.random().toString(36).substring(7);
+
+var System = Java.type("java.lang.System");
+
+print(System.getProperty("nashorn.persistent.code.cache"));
 
 // local configuration
-var config = loadWithNewGlobal("https://raw.githubusercontent.com/mennooo/sqlcl/master/conf/config.js");
+var config = loadWithNewGlobal("https://raw.githubusercontent.com/mennooo/sqlcl/master/conf/config.js?v=" + v);
 
 // Library to install releases
 var release = loadWithNewGlobal("C:\\Users\\mhoogendijk\\Documents\\sqlcl\\lib\\release.js", config);
