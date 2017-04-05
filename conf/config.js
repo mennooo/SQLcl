@@ -23,22 +23,22 @@ var config = {
         typeSpec: {
             extension: "typ",
             versioning: false,
-            dbType: type
+            dbType: "type"
         },
         typeBody: {
             extension: "tyb",
             versioning: false,
-            dbType: type
+            dbType: "type"
         },
         trigger: {
             extension: "trg",
             versioning: false,
-            dbType: trigger
+            dbType: "trigger"
         },
         procedure: {
             extension: "prc",
             versioning: false,
-            dbType: procedure
+            dbType: "procedure"
         }
     }
 }
