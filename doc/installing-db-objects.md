@@ -80,6 +80,8 @@ Purpose: code to install a release
 ```javascript
 // file: add_install_command.js
 
+// Runs on startup
+
 va gCommand = "install";
 
 var releases = loadWithGlobal("releases.js");
@@ -91,21 +93,26 @@ var command = loadWithGlobal("command.js", ctx);
 // install check <release>: check if the release complies
 // install release <release> start the installation
 
-if (command.getCommand(arguments) = gCommand) {
-
-  command.add({
-    handle: {
-      command: gCommand,
-      ActionArguments: command.getActionArguments(arguments),
-      actions: [
-          "list": releases.list
-          "check": release.check
-          "release": release.install
-      ]
-    }
-  });
-  
-}
+command.add({
+  handle: {
+    command: gCommand,
+    info: "Install new releases.\nTo list all releases type install list\nTo install a release type install <release>",
+    actions: [
+        {
+          name: "list",
+          action: releases.list
+        },
+        {
+          name: "check",
+          action: release.check
+         },
+        {
+          name: "release",
+          action: release.install
+        }
+    ]
+  }
+});
 
 
 ```
