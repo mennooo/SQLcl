@@ -1,4 +1,4 @@
-var objectTypes: {
+var objectTypes = {
     script: {
         extension: "sql",
         versioning: false,
