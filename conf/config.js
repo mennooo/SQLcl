@@ -2,6 +2,8 @@
 
 (function() {
 
+    var version = "1.1.1";
+
     var baseDir = "C:/Users/mhoogendijk/stack/Qualogy/presentation/sqlcl/releases";
 
     var objectTypes = {
@@ -48,6 +50,7 @@
     }
 
     return {
+        version: version,
         baseDir: baseDir,
         objectTypes: objectTypes
     };
