@@ -96,6 +96,7 @@ var command = loadWithGlobal("command.js", ctx);
 command.add({
   handle: {
     command: gCommand,
+    info: "Install new releases.\nTo list all releases type install list\nTo install a release type install <release>",
     actions: [
         {
           name: "list",
