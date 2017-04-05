@@ -8,7 +8,8 @@ var gCommand = "install";
 var command = loadWithNewGlobal("C:/Users/mhoogendijk/Documents/sqlcl/lib/command.js");
 
 // Library to install releases
-var release = loadWithNewGlobal("C:\\Users\\mhoogendijk\\Documents\\sqlcl\\lib\\release.js");
+config = loadWithNewGlobal("https://raw.githubusercontent.com/mennooo/sqlcl/master/config/config.js?v=5");
+var release = loadWithNewGlobal("C:\\Users\\mhoogendijk\\Documents\\sqlcl\\lib\\release.js",config);
 
 // Set the baseDir
 release.setBaseDir("C:\\Users\\mhoogendijk\\stack\\Qualogy\\presentation\\sqlcl\\releases");
