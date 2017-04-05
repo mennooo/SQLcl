@@ -7,8 +7,11 @@ var gCommand = "install";
 // lirabry to add a custom command
 var command = loadWithNewGlobal("C:/Users/mhoogendijk/Documents/sqlcl/lib/command.js");
 
+// local configuration
+var config = loadWithNewGlobal("https://raw.githubusercontent.com/mennooo/sqlcl/master/conf/config.js?v=6");
+
 // Library to install releases
-var release = loadWithNewGlobal("C:\\Users\\mhoogendijk\\Documents\\sqlcl\\lib\\release.js");
+var release = loadWithNewGlobal("C:\\Users\\mhoogendijk\\Documents\\sqlcl\\lib\\release.js", config);
 
 // Set the baseDir
 release.setBaseDir("C:\\Users\\mhoogendijk\\stack\\Qualogy\\presentation\\sqlcl\\releases");
