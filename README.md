@@ -111,6 +111,7 @@ These are resources I found useful for preparing this project.
 
 ### OTN
 - http://www.oracle.com/technetwork/developer-tools/sqlcl/overview/index.html
+- http://docs.oracle.com/database/sql-developer-4.2/SQCQR/toc.htm
 
 ### Blogs
 - http://krisrice.blogspot.com/
