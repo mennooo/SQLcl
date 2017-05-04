@@ -33,8 +33,6 @@ create or replace package body apex_monitoring_pkg as
 
   begin
 
-    p_ac('send', p_text, g_session_id);
-
     dbms_pipe.pack_message(p_text);
 
     l_status := dbms_pipe.send_message(gc_message_prefix || g_session_id);
@@ -103,10 +101,9 @@ create or replace package body apex_monitoring_pkg as
 
   exception
     when others then
-      p_ac(sqlerrm);
+      null;
 
   end send_debug;
 
-end apex_monitoring;
-/
+end apex_monitoring_pkg;
 /

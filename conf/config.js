@@ -3,11 +3,6 @@ var config = {
   version: "?v=" + Math.random().toString(36).substring(7),
   fileSeparator: java.io.File.separator,
   configDir: args[0],
-  baseDir: function(){
-    var slugs = args[0].split(java.io.File.separator);
-    slugs.splice(-2, 2);
-    return slugs.join(java.io.File.separator) + java.io.File.separator;
-  }(),
   //baseDir: "https://raw.githubusercontent.com/mennooo/sqlcl/master",
   objectTypes: [{
       type: "script",
@@ -59,3 +54,13 @@ var config = {
     }
   ]
 };
+
+config.baseDir = function(){
+  var slugs = config.configDir.split(java.io.File.separator);
+  slugs.splice(-2, 2);
+  return slugs.join(java.io.File.separator) + java.io.File.separator;
+}();
+
+config.releaseDir = config.baseDir + "demos/2_custom_commands/install/releases/";
+
+config.releaseLogDir = config.releaseDir + "../logs/";

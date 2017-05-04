@@ -27,5 +27,5 @@ create or replace package apex_monitoring_pkg is
   ------------------------------------------------------------------------------
   procedure send_debug;
 
-end apex_monitoring;
+end apex_monitoring_pkg;
 /
