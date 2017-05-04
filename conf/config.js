@@ -1,67 +1,61 @@
 // Relplace this with your own configuration
-
-(function() {
-
-    var version = "1.1.911";
-
-    print("loading config, version", version);
-
-    var baseDir = "C:/Users/mhoogendijk/stack/Qualogy/presentation/sqlcl/releases";
-
-    var objectTypes = [{
-            type: "script",
-            extension: "sql",
-            versioning: false,
-            dbType: null
-        },
-        {
-            type: "view",
-            extension: "vw",
-            versioning: false,
-            dbType: "view"
-        },
-        {
-            type: "packageSpec",
-            extension: "pks",
-            versioning: true,
-            dbType: "package"
-        },
-        {
-            type: "packageBody",
-            extension: "pkb",
-            versioning: true,
-            dbType: "package"
-        },
-        {
-            type: "typeSpec",
-            extension: "typ",
-            versioning: false,
-            dbType: "type"
-        },
-        {
-            type: "typeBody",
-            extension: "tyb",
-            versioning: false,
-            dbType: "type"
-        },
-        {
-            type: "trigger",
-            extension: "trg",
-            versioning: false,
-            dbType: "trigger"
-        },
-        {
-            type: "procedure",
-            extension: "prc",
-            versioning: false,
-            dbType: "procedure"
-        }
-    ];
-
-    return {
-        version: version,
-        baseDir: baseDir,
-        objectTypes: objectTypes
-    };
-
-})();
+var config = {
+  version: "?v=" + Math.random().toString(36).substring(7),
+  fileSeparator: java.io.File.separator,
+  configDir: args[0],
+  baseDir: function(){
+    var slugs = args[0].split(java.io.File.separator);
+    slugs.splice(-2, 2);
+    return slugs.join(java.io.File.separator) + java.io.File.separator;
+  }(),
+  //baseDir: "https://raw.githubusercontent.com/mennooo/sqlcl/master",
+  objectTypes: [{
+      type: "script",
+      extension: "sql",
+      versioning: false,
+      dbType: null
+    },
+    {
+      type: "view",
+      extension: "vw",
+      versioning: false,
+      dbType: "view"
+    },
+    {
+      type: "packageSpec",
+      extension: "pks",
+      versioning: true,
+      dbType: "package"
+    },
+    {
+      type: "packageBody",
+      extension: "pkb",
+      versioning: true,
+      dbType: "package"
+    },
+    {
+      type: "typeSpec",
+      extension: "typ",
+      versioning: false,
+      dbType: "type"
+    },
+    {
+      type: "typeBody",
+      extension: "tyb",
+      versioning: false,
+      dbType: "type"
+    },
+    {
+      type: "trigger",
+      extension: "trg",
+      versioning: false,
+      dbType: "trigger"
+    },
+    {
+      type: "procedure",
+      extension: "prc",
+      versioning: false,
+      dbType: "procedure"
+    }
+  ]
+};

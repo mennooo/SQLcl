@@ -1,21 +1,14 @@
 // file: add_install_command.js
 
 // Runs on startup
-
 var gCommand = "install";
 
-// lirabry to add a custom command
-var command = loadWithNewGlobal("C:/Users/mhoogendijk/Documents/sqlcl/lib/command.js");
-var v = Math.random().toString(36).substring(7);
-
-// local configuration
-var config = loadWithNewGlobal("https://raw.githubusercontent.com/mennooo/sqlcl/master/conf/config.js?v=" + v);
+// library to add a custom command
+var command = load(config.baseDir + "lib/command.js");
 
 // Library to install releases
-var release = loadWithNewGlobal("C:\\Users\\mhoogendijk\\Documents\\sqlcl\\lib\\release.js", config);
+var release = load(config.baseDir + "lib/release.js");
 
-// Set the baseDir
-release.setBaseDir(config.baseDir);
 
 // Possible commands
 // install list: list the possible releases
@@ -24,7 +17,7 @@ release.setBaseDir(config.baseDir);
 
 command.add({
     command: gCommand,
-    info: "Install new releases.\nTo list all releases type install list\nTo install a release type install <release>",
+    info: '\nInstall new releases. The following commands are available:\nTo set the base directory: install dir <base_dir>\nTo list all releases: install list\nTo install a release: install release <release>\nTo validate an install: install check <release>\n\n',
     actions: [{
             name: "list",
             action: release.listAll
@@ -36,6 +29,10 @@ command.add({
         {
             name: "release",
             action: release.install
+        },
+        {
+          name: "dir",
+          action: release.setBaseDir
         }
     ],
     begin: function() {},

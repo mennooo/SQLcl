@@ -1,4 +1,6 @@
-create or replace package apex_monitoring is
+create or replace package apex_monitoring_pkg is
+
+  version_no   varchar2(20) := '1.00';
 
   ------------------------------------------------------------------------------
   -- procedure send
@@ -22,8 +24,8 @@ create or replace package apex_monitoring is
 
   ------------------------------------------------------------------------------
   -- procedure enable_debug
-  ------------------------------------------------------------------------------  
+  ------------------------------------------------------------------------------
   procedure send_debug;
-  
+
 end apex_monitoring;
 /

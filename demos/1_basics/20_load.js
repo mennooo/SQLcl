@@ -4,6 +4,9 @@
 
 */
 
-load("C:/Users/mhoogendijk/Documents/sqlcl/demos/loads/load.js", 1);
+//load("C:/Users/mhoogendijk/Documents/sqlcl/demos/loads/load.js", 1);
 
-helloWorld();
+var lala = load(config.baseDir + "demos/loads/load.js", 1);
+
+print(helloWorld)
+lala.helloWorld();
