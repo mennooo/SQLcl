@@ -64,3 +64,5 @@ config.baseDir = function(){
 config.releaseDir = config.baseDir + "demos/2_custom_commands/install/releases/";
 
 config.releaseLogDir = new java.io.File(config.releaseDir + "../logs").getCanonicalPath() + config.fileSeparator;
+
+config.publicDir = config.baseDir + "public/";

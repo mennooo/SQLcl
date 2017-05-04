@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML output demo</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="row">
+      <div class="large-12 columns">
+        <h3>Demo for APEX CONNECT</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="callout">
+          <h4>Lets see the output of SQLcl!</h34>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <h5>The output is:</h5>
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="primary callout" id="message">
+              <p><strong>No output jet..</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function showMessage(text) {
+        document.getElementById('message').innerHTML = text;
+      }
+
+      var ws = new WebSocket('ws://' + document.location.host + '/websockets');
+      showMessage('Connecting...');
+      ws.onopen = function() { showMessage('Connected!'); };
+      ws.onclose = function() { showMessage('Lost connection'); };
+      ws.onmessage = function(msg) { showMessage(msg.data); };
+    </script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

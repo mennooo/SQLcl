@@ -1,0 +1,20 @@
+<html>
+  <body>
+
+    <h1>APEX CONNECT Demo</h1>
+
+    <!-- Results -->
+    <div id="message"></div>
+    <script>
+      function showMessage(text) {
+        document.getElementById('message').innerHTML = text;
+      }
+
+      var ws = new WebSocket('ws://' + document.location.host + '/websockets');
+      showMessage('Connecting...');
+      ws.onopen = function() { showMessage('Connected!'); };
+      ws.onclose = function() { showMessage('Lost connection'); };
+      ws.onmessage = function(msg) { showMessage(msg.data); };
+    </script>
+  </body>
+</html>

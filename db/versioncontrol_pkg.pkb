@@ -5,7 +5,7 @@ create or replace package body versioncontrol_pkg is
   , sub_version number
   , postfix varchar2(20)
   );
-
+  
   ------------------------------------------------------------------------------
   -- function decode_version_no
   ------------------------------------------------------------------------------
@@ -40,6 +40,8 @@ create or replace package body versioncontrol_pkg is
     return l_version_attributes;
 
   end decode_version_no;
+  
+
 
   ------------------------------------------------------------------------------
   -- function get_user_object
@@ -121,9 +123,11 @@ create or replace package body versioncontrol_pkg is
      where name = l_user_obj.object_name
        and type like '%' || upper(p_object_type) || '%'
        and lower(text) like '%version_no%:=%';
-
+dbms_output.put_line(l_version_nr);
     l_curr := rate_version_number(l_version_nr);
     l_new := rate_version_number(p_version_nr);
+    
+    dbms_output.put_line(rate_version_number(p_version_nr));
 
     if l_curr <= l_new then
       l_ind := 1;
