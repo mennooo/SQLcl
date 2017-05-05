@@ -7,7 +7,7 @@ var gCommand = "addobject";
 var command = load(config.baseDir + "lib/command.js");
 
 // Library to install releases
-var release = load(config.baseDir + "lib/addobject.js");
+var addobject = load(config.baseDir + "lib/addobject.js");
 
 
 // Possible commands
@@ -17,26 +17,10 @@ var release = load(config.baseDir + "lib/addobject.js");
 
 command.add({
     command: gCommand,
-    info: '\nInstall new releases. The following commands are available:\nTo set the base directory: install dir <base_dir>\nTo list all releases: install list\nTo install a release: install release <release>\nTo validate an install: install check <release>\nTo change the output: install output default|file|string|web\n\n',
+    info: '\nCreate a new database object and open the file\n',
     actions: [{
-            name: "list",
-            action: release.listAll
-        },
-        {
-            name: "check",
-            action: release.check
-        },
-        {
-            name: "release",
-            action: release.install
-        },
-        {
-          name: "dir",
-          action: release.setBaseDir
-        },
-        {
-          name: "output",
-          action: release.setOutputMethod
+            name: "package",
+            action: addobject.package
         }
     ],
     begin: function() {},

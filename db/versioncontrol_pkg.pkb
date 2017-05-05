@@ -97,6 +97,7 @@ create or replace package body versioncontrol_pkg is
     p_version_nr    varchar2
   , p_object_name   varchar2
   , p_object_type   varchar2
+  , p_var_name      varchar2
   , p_owner         varchar2  default user
   ) return number is
 
@@ -122,8 +123,8 @@ create or replace package body versioncontrol_pkg is
       from user_source
      where name = l_user_obj.object_name
        and type like '%' || upper(p_object_type) || '%'
-       and lower(text) like '%version_no%:=%';
-dbms_output.put_line(l_version_nr);
+       and lower(text) like '%' || lower(p_var_name) || '%:=%';
+       
     l_curr := rate_version_number(l_version_nr);
     l_new := rate_version_number(p_version_nr);
     

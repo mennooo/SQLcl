@@ -37,7 +37,7 @@
     </div>
     <script>
       function showMessage(text) {
-        document.getElementById('message').innerHTML = text;
+        document.getElementById('message').innerHTML = '<pre>' + text + '</pre>';
       }
 
       var ws = new WebSocket('ws://' + document.location.host + '/websockets');

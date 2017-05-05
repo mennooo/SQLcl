@@ -4,6 +4,26 @@ var config = {
   fileSeparator: java.io.File.separator,
   configDir: args[0],
   //baseDir: "https://raw.githubusercontent.com/mennooo/sqlcl/master",
+  applications: {
+    web: {
+      name: "chrome",
+      executable: "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+    },
+    file: {
+      name: "sqldeveloper",
+      executable: "C:\\oracle\\sqldeveloper\\sqldeveloper.exe"
+    }
+  },
+  releases: {
+    defaultOutputMethod: 'default',
+    variableNames: ["package_versie", "c_versie", "version_no"],
+    spec: true,
+    body: true
+  },
+  addObjects: {
+    nameMaxLength: 30,
+    fileDir: 'C:\\Temp\\'
+  },
   objectTypes: [{
       type: "script",
       extension: "sql",
@@ -11,46 +31,46 @@ var config = {
       dbType: null
     },
     {
-      type: "view",
       extension: "vw",
       versioning: false,
-      dbType: "view"
+      dbType: "view",
+      formalType: "VIEW"
     },
     {
-      type: "packageSpec",
       extension: "pks",
       versioning: true,
-      dbType: "package"
+      dbType: "package",
+      formalType: "PACKAGE"
     },
     {
-      type: "packageBody",
       extension: "pkb",
       versioning: true,
-      dbType: "package"
+      dbType: "package",
+      formalType: "PACKAGE BODY"
     },
     {
-      type: "typeSpec",
       extension: "typ",
       versioning: false,
-      dbType: "type"
+      dbType: "type",
+      formalType: "TYPE"
     },
     {
-      type: "typeBody",
       extension: "tyb",
       versioning: false,
-      dbType: "type"
+      dbType: "type",
+      formalType: "TYPE BODY"
     },
     {
-      type: "trigger",
       extension: "trg",
       versioning: false,
-      dbType: "trigger"
+      dbType: "trigger",
+      formalType: "TRIGGER"
     },
     {
-      type: "procedure",
       extension: "prc",
       versioning: false,
-      dbType: "procedure"
+      dbType: "procedure",
+      formalType: "PROCEDURE"
     }
   ]
 };
@@ -66,3 +86,5 @@ config.releaseDir = config.baseDir + "demos/2_custom_commands/install/releases/"
 config.releaseLogDir = new java.io.File(config.releaseDir + "../logs").getCanonicalPath() + config.fileSeparator;
 
 config.publicDir = config.baseDir + "public/";
+
+config.templateDir = config.baseDir + "templates/";

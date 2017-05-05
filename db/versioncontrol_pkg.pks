@@ -17,6 +17,7 @@ create or replace package versioncontrol_pkg as
     p_version_nr    varchar2
   , p_object_name   varchar2
   , p_object_type   varchar2
+  , p_var_name      varchar2
   , p_owner         varchar2  default user
   ) return number;
 
