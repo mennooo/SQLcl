@@ -1,4 +1,6 @@
-create or replace package apex_monitoring is
+create or replace package apex_monitoring_pkg is
+
+  version_no   varchar2(20) := '1.00';
 
   ------------------------------------------------------------------------------
   -- procedure send
@@ -11,7 +13,7 @@ create or replace package apex_monitoring is
   -- function receive
   ------------------------------------------------------------------------------
   function receive(
-    p_username    varchar2
+    p_workspace   varchar2
   , p_session_id  number
   ) return varchar2;
 
@@ -22,8 +24,8 @@ create or replace package apex_monitoring is
 
   ------------------------------------------------------------------------------
   -- procedure enable_debug
-  ------------------------------------------------------------------------------  
+  ------------------------------------------------------------------------------
   procedure send_debug;
-  
-end apex_monitoring;
+
+end apex_monitoring_pkg;
 /

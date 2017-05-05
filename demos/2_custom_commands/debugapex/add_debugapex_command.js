@@ -7,7 +7,7 @@ var gCommand = "debugapex";
 var command = load(config.baseDir + "lib/command.js");
 
 // Library to install releases
-var release = load(config.baseDir + "lib/release.js");
+var debugapex = load(config.baseDir + "lib/debugapex.js");
 
 
 // Possible commands
@@ -17,22 +17,10 @@ var release = load(config.baseDir + "lib/release.js");
 
 command.add({
     command: gCommand,
-    info: '\nDebug APEX sessions\nThe following commands are available:\nTo debug a session: debugapex <username> <session_id>\n\n',
+    info: '\nDebug APEX sessions\nThe following commands are available:\nTo debug a session: debugapex monitor <username> <session_id>\n\n',
     actions: [{
-            name: "list",
-            action: release.listAll
-        },
-        {
-            name: "check",
-            action: release.check
-        },
-        {
-            name: "release",
-            action: release.install
-        },
-        {
-          name: "dir",
-          action: release.setBaseDir
+            name: "monitor",
+            action: debugapex.monitor
         }
     ],
     begin: function() {},
