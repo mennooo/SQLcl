@@ -36,8 +36,27 @@
       </div>
     </div>
     <script>
+
+      var append = false;
+
+      function printOutput(text) {
+        var el = document.getElementById('message');
+        if (append) {
+          el.innerHTML = '<pre>' + text + '</pre>' + el.innerHTML;
+        } else {
+          el.innerHTML = '<pre>' + text + '</pre>';
+        }
+      }
+
       function showMessage(text) {
-        document.getElementById('message').innerHTML = '<pre>' + text + '</pre>';
+        if(text === "websocket:append"){
+          append = true;
+        } else if (text === "websocket:replace") {
+          append = false;
+        }else {
+          printOutput(text);
+        }
+
       }
 
       var ws = new WebSocket('ws://' + document.location.host + '/websockets');

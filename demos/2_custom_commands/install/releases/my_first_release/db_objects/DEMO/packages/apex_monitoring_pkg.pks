@@ -6,26 +6,41 @@ create or replace package apex_monitoring_pkg is
   -- procedure send
   ------------------------------------------------------------------------------
   procedure send(
-    p_text in varchar2
+    p_text        in varchar2
+  , p_session_id  in number
   );
 
   ------------------------------------------------------------------------------
   -- function receive
   ------------------------------------------------------------------------------
   function receive(
-    p_username    varchar2
-  , p_session_id  number
+    p_session_id  number
   ) return varchar2;
 
   ------------------------------------------------------------------------------
   -- procedure enable_debug
   ------------------------------------------------------------------------------
-  procedure enable_debug;
+  procedure enable_debug(
+    p_session_id    number
+  , p_debug_level   apex_debug.t_log_level default apex_debug.c_log_level_info
+  );
+
+  ------------------------------------------------------------------------------
+  -- procedure disable_debug
+  ------------------------------------------------------------------------------
+  procedure disable_debug(
+    p_session_id    number
+  );
 
   ------------------------------------------------------------------------------
   -- procedure enable_debug
   ------------------------------------------------------------------------------
   procedure send_debug;
+  
+  ------------------------------------------------------------------------------
+  -- procedure init
+  ------------------------------------------------------------------------------
+  procedure init;
 
 end apex_monitoring_pkg;
 /

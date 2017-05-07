@@ -10,8 +10,13 @@ var config = {
       executable: "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
     },
     file: {
+      name: "sublime",
+      executable: "C:\\Program Files\\Sublime Text 3\\sublime_text.exe",
+      //executable: "C:\\app\\sqldeveloper\\sqldeveloper.exe"
+    },
+    database: {
       name: "sqldeveloper",
-      executable: "C:\\oracle\\sqldeveloper\\sqldeveloper.exe"
+      executable: "C:\\app\\sqldeveloper\\sqldeveloper.exe"
     }
   },
   releases: {
@@ -22,7 +27,7 @@ var config = {
   },
   addObjects: {
     nameMaxLength: 30,
-    fileDir: 'C:\\Temp\\'
+    fileDir: 'D:\\oracle\\db\\'
   },
   objectTypes: [{
       type: "script",

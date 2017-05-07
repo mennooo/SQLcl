@@ -17,10 +17,14 @@ var debugapex = load(config.baseDir + "lib/debugapex.js");
 
 command.add({
     command: gCommand,
-    info: '\nDebug APEX sessions\nThe following commands are available:\nTo debug a session: debugapex monitor <username> <session_id>\n\n',
+    info: '\nDebug APEX sessions\nThe following commands are available:\nTo debug a session: debugapex monitor <session_id> error|warn|info\n\n',
     actions: [{
             name: "monitor",
             action: debugapex.monitor
+        },
+        {
+          name: "stop",
+          action: debugapex.stop
         }
     ],
     begin: function() {},
