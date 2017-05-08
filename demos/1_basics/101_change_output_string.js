@@ -23,4 +23,4 @@ bufferedOutputStream.flush();
 
 output = byteOutputStream.toString();
 
-//print(output);
+print(output);

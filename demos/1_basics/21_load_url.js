@@ -4,6 +4,8 @@
 
 */
 
-load("C:/Users/mhoogendijk/Documents/sqlcl/demos/loads/load.js", 1);
+load("https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js");
 
-helloWorld();
+var sysdate = moment().format("dddd, MMMM Do YYYY, hh:mm:ss");
+
+print(sysdate);
