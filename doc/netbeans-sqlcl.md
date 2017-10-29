@@ -50,7 +50,7 @@ loadWithNewGlobal(
 );
 ```
 
-- [The test_for_netbeans.js script](../demos/test_for_netbeans.js)
+- [The test_for_netbeans.js script](../demos/4_netbeans/test_for_netbeans.js)
 
 You should get a similar result when you run the script:
 
