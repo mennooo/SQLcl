@@ -118,6 +118,7 @@ These are resources I found useful for preparing this project.
 - http://www.thatjeffsmith.com/
 - http://dermotoneill.blogspot.com/
 - http://www.n-k.de/riding-the-nashorn/
+- https://www.scaler.com/topics/sql/
 
 ### Examples
 - https://github.com/mpkincai/sqlcl
